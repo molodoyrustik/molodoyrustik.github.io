@@ -67,23 +67,7 @@
     e.target.classList.remove('playing');
   }
 
-  // keys.addEventListener('click', function(e){
-  //   if ( e.target.closest('.keys') ) {
-  //     var key = e.target.closest('.key');
-  //     if ( key ) {
-  //       var dataKey = key.getAttribute('data-key');
-  //       audioFiles.forEach( (val, i) => {
-  //         if ( dataKey == val.getAttribute('data-key') ) {
-  //           key.classList.add('playing');
-  //           val.currentTime = 0;
-  //           val.play();
-  //         }
-  //       })
-  //     }
-  //   }
-  // }, false);
-
-  keys.addEventListener('touchstart', function(e){
+  keys.addEventListener('click', function(e){
     if ( e.target.closest('.keys') ) {
       var key = e.target.closest('.key');
       if ( key ) {
@@ -98,6 +82,22 @@
       }
     }
   }, false);
+
+//   keys.addEventListener('touchstart', function(e){
+//     if ( e.target.closest('.keys') ) {
+//       var key = e.target.closest('.key');
+//       if ( key ) {
+//         var dataKey = key.getAttribute('data-key');
+//         audioFiles.forEach( (val, i) => {
+//           if ( dataKey == val.getAttribute('data-key') ) {
+//             key.classList.add('playing');
+//             val.currentTime = 0;
+//             val.play();
+//           }
+//         })
+//       }
+//     }
+//   }, false);
 
   buttons.forEach(key => key.addEventListener('transitionend', removeTransition));
 </script>
