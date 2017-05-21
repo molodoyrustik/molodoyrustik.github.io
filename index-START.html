@@ -76,6 +76,7 @@
           if ( dataKey == val.getAttribute('data-key') ) {
             key.classList.add('playing');
             val.currentTime = 0;
+            val.pause();
             val.play();
           }
         })
