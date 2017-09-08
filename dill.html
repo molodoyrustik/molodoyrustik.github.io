@@ -19,14 +19,9 @@
 	}, 100)
 
 
-    if(prompt('Введит свое имя').toLowerCase() == decodeURI("жанна") ) {
+    if(prompt('Введит свое имя').toLowerCase() == decodeURI("элина") ) {
 		var voices = speechSynthesis.getVoices();
-		var utterance = new SpeechSynthesisUtterance("Жанна, это бот Руслана, он просил передать, что он влюблен в тебя");
-		utterance.voice = voices[1];
-		speechSynthesis.speak(utterance);
-    } else if(prompt('Введит свое имя').toLowerCase() == decodeURI("зарина") ) {
-		var voices = speechSynthesis.getVoices();
-		var utterance = new SpeechSynthesisUtterance("Зарина, это бот Дамира, он просил передать, что он влюблен в тебя");
+		var utterance = new SpeechSynthesisUtterance("элина, это бот Руслана, он просил передать, что ты прекрасна");
 		utterance.voice = voices[1];
 		speechSynthesis.speak(utterance);
     } else {
