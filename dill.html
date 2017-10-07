@@ -19,9 +19,9 @@
 	}, 100)
 
 
-    if(prompt('Введит свое имя').toLowerCase() == decodeURI("элина") ) {
+    if(prompt('Введит свое имя').toLowerCase() == decodeURI("анастасия") ) {
 		var voices = speechSynthesis.getVoices();
-		var utterance = new SpeechSynthesisUtterance("элина, это бот Руслана, он просил передать, что ты прекрасна");
+		var utterance = new SpeechSynthesisUtterance("анастасия, это бот Руслана, он просил передать, что ты прекрасна");
 		utterance.voice = voices[1];
 		speechSynthesis.speak(utterance);
     } else {
