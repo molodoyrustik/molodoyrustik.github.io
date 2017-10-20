@@ -18,11 +18,11 @@ body {
 	}
 
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <body>
-	<h1>Залип?</h1>
-</body>1
+</body>
 <script>
-	window.document.addEventListener('mousemove', function(e) {
+	$(document).on('mousemove touchstart', function(e) {
 		console.log(e);
 		if (document.body.childElementCount < 100) {
 			var div = document.createElement('div');
@@ -39,27 +39,9 @@ body {
 			document.body.appendChild(div);
 		}
 		
-	}, false);
+	})
 	
-	window.document.addEventListener('touchmove', function(e) {
-		console.log(e);
-		if (document.body.childElementCount < 100) {
-			var div = document.createElement('div');
-			div.classList.add('circle');
-			div.style.left = e.clientX - 50 + 'px';
-			div.style.top = e.clientY - 50 + 'px';
-			setTimeout(() => {
-				div.style.width = 25 + 'px';
-				div.style.height = 25 + 'px';
-			}, 200)
-			setTimeout(() => {
-				document.body.removeChild(div);
-			}, 1000)
-			document.body.appendChild(div);
-		}
-		
-	}, false);
-	
+
 	
 </script>
 </html>
