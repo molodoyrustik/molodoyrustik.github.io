@@ -21,8 +21,7 @@
 
     if(name == decodeURI("никита") ) {
 		var voices = speechSynthesis.getVoices();
-		var utterance = new SpeechSynthesisUtterance("никита, это Мамка твоя, ты пидр ушастый, иди хуй соси");
-	    	var utterance = new SpeechSynthesisUtterance("Шучу, Некит извиняй");
+		var utterance = new SpeechSynthesisUtterance("нЕкита, это Мамка твоя, ты пидр ушастый, иди хуй соси");
 		utterance.voice = voices[1];
 		speechSynthesis.speak(utterance);
     } else if(name == decodeURI("карина") ) {
