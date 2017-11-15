@@ -17,14 +17,21 @@
 		body.style.backgroundColor = 'hsla(' + count + ',100%,50%,1)';
 		count++;
 	}, 100)
+	var name = prompt('Введит свое имя').toLowerCase();
 
-
-    if(prompt('Введит свое имя').toLowerCase() == decodeURI("вероника") ) {
+    if(name == decodeURI("никита") ) {
 		var voices = speechSynthesis.getVoices();
-		var utterance = new SpeechSynthesisUtterance("вероника, это бот Руслана, он просил передать, что ты прекрасна");
+		var utterance = new SpeechSynthesisUtterance("никита, это Мамка твоя, ты пидр ушастый, иди хуй соси");
+	    	var utterance = new SpeechSynthesisUtterance("Шучу, Некит извиняй");
 		utterance.voice = voices[1];
 		speechSynthesis.speak(utterance);
-    } else {
+    } else if(name == decodeURI("карина") ) {
+		var voices = speechSynthesis.getVoices();
+		var utterance = new SpeechSynthesisUtterance("Карина, ну ты красотка ваще");
+		utterance.voice = voices[1];
+		speechSynthesis.speak(utterance);
+    }
+	else {
     	var voices = speechSynthesis.getVoices();
 		var utterance = new SpeechSynthesisUtterance('ты кто такой? давай до свидания');
 		utterance.voice = voices[1];
