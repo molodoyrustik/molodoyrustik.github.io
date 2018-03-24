@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Hello</title>
+	<title>Hello2</title>
 </head>
 <body>
 	
@@ -19,9 +19,9 @@
 	}, 100)
 	var name = prompt('Введит свое имя').toLowerCase();
 
-    if(name == decodeURI("никита") ) {
+    if(name == decodeURI("алсу") ) {
 		var voices = speechSynthesis.getVoices();
-		var utterance = new SpeechSynthesisUtterance("нЕкита, это Мамка твоя, ты пидр ушастый, иди хуй соси");
+		var utterance = new SpeechSynthesisUtterance("алсу, руслан просил передать что ты прекрасна!");
 		utterance.voice = voices[1];
 		speechSynthesis.speak(utterance);
     } else if(name == decodeURI("карина") ) {
