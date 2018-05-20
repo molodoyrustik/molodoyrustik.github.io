@@ -19,18 +19,12 @@
 	}, 100)
 	var name = prompt('Введит свое имя').toLowerCase();
 
-    if(name == decodeURI("алсу") ) {
+    if(name == decodeURI("альмира") ) {
 		var voices = speechSynthesis.getVoices();
-		var utterance = new SpeechSynthesisUtterance("алсу, руслан просил передать что ты прекрасна!");
+		var utterance = new SpeechSynthesisUtterance("альмира, руслан просил передать что ты прекрасна!");
 		utterance.voice = voices[1];
 		speechSynthesis.speak(utterance);
-    } else if(name == decodeURI("карина") ) {
-		var voices = speechSynthesis.getVoices();
-		var utterance = new SpeechSynthesisUtterance("Карина, ну ты красотка ваще");
-		utterance.voice = voices[1];
-		speechSynthesis.speak(utterance);
-    }
-	else {
+    } else {
     	var voices = speechSynthesis.getVoices();
 		var utterance = new SpeechSynthesisUtterance('ты кто такой? давай до свидания');
 		utterance.voice = voices[1];
