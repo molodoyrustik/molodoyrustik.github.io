@@ -21,12 +21,12 @@
 
     if(name == decodeURI("анастасия") ) {
 		var voices = speechSynthesis.getVoices();
-		var utterance = new SpeechSynthesisUtterance("марина, руслан просил передать что ты прекрасна!");
+		var utterance = new SpeechSynthesisUtterance("анастасия, руслан просил передать что ты прекрасна!");
 		utterance.voice = voices[1];
 		speechSynthesis.speak(utterance);
     } else {
     	var voices = speechSynthesis.getVoices();
-		var utterance = new SpeechSynthesisUtterance('ты кто такой? давай до свидания');
+		var utterance = new SpeechSynthesisUtterance('Руслану другие девушки не нужны, так что иди отсюда');
 		utterance.voice = voices[1];
 		speechSynthesis.speak(utterance);д
     }
