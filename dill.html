@@ -19,9 +19,9 @@
 	}, 100)
 	var name = prompt('Введит свое имя').toLowerCase();
 
-    if(name == decodeURI("алина") ) {
+    if(name == decodeURI("регина") ) {
 		var voices = speechSynthesis.getVoices();
-		var utterance = new SpeechSynthesisUtterance("алина, руслан просил передать, что вы прекрасная девушка и что он скучает по вам безумно");
+	    	var utterance = new SpeechSynthesisUtterance('Регина, руслан просил передать, что вы прекрасны, и что он скучает по вам безумно');
 		utterance.voice = voices[1];
 		speechSynthesis.speak(utterance);
     } else {
