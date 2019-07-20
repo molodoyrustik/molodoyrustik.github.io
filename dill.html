@@ -17,12 +17,14 @@
 		body.style.backgroundColor = 'hsla(' + count + ',100%,50%,1)';
 		count++;
 	}, 100)
+		console.log('yes');
 	var name = prompt('Введит свое имя').toLowerCase();
-	console.log('yes');
+
     if(name == decodeURI("регина") ) {
 		var voices = speechSynthesis.getVoices();
 	    	var utterance = new SpeechSynthesisUtterance('Регина, руслан просил передать, что вы прекрасны, и что он скучает по вам безумно');
-		utterance.voice = voices[1];
+    utterance.lang = "ru-RU";		
+utterance.voice = voices[1];
 		speechSynthesis.speak(utterance);
     } else {
     	var voices = speechSynthesis.getVoices();
