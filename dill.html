@@ -32,6 +32,9 @@ utterance.voice = voices[1];
 		utterance.voice = voices[1];
 		speechSynthesis.speak(utterance);
     }
+utter = new window.SpeechSynthesisUtterance("cat");
 
+window.speechSynthesis.cancel();
+window.speechSynthesis.speak(utter);
 </script>
 </html>
